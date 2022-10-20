@@ -1,6 +1,9 @@
 ''' 
 Today we will learn about:
-- Review what's a string 
+- Review:
+    - what's a string
+    - input()
+    - how to make commands
 - Dictionaries and accessing a peice of the element
 - adding variables to commands 
 - looping with input
@@ -26,9 +29,8 @@ students2 = {
 
 # this will just find the student and add the points
 def add_points(student, points):
-    students1.get(student) += int(points)
+    students1[student] += int(points)
     # we can also use students1[student] += int(points)
-
 
 def display_scores():
     print(students1)
