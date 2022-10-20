@@ -41,3 +41,4 @@ while True:
     student_name = input("Enter the good student's name: ")
     student_points = input("Enter the points earned: ")
     add_points(student_name, student_points)
+    
