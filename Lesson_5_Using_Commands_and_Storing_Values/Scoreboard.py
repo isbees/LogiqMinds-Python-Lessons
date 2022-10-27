@@ -15,25 +15,30 @@ Today we will learn about:
 #           A string can have any length 
 
 students1 = {
-    "Feranmi": 5,
-    "Sam": 1,
-    "Lorrenzo": 1,
-    "Dvimedh": 2
+    "Feranmi": 10,
+    "Sam": 9,
+    "Lorenzo": 4,
+    "Dvimedh": 6
     }
 
-students2 = {
-    "Arya": 8,
-    "Yuvan": 6,
-    "Ryan": 5
+students_points_class2 = {
+    "Aria": 10,
+    "Yuvan": 8,
+    "Ryan": 7,
+    "Isaac": -20
     }
 
 # this will just find the student and add the points
 def add_points(student, points):
-    students1[student] += int(points)
+    students_points_class2[student] += int(points)
+    # students_points_class2[student] = students_points_class2[student] + points
     # we can also use students1[student] += int(points)
 
+def subtract_points(student, points):
+    students_points_class2[student] -= int(points)
+
 def display_scores():
-    print(students1)
+    print(students_points_class2)
 
 while True:
     display_scores()
@@ -41,4 +46,5 @@ while True:
     student_name = input("Enter the good student's name: ")
     student_points = input("Enter the points earned: ")
     add_points(student_name, student_points)
-    
+    # display_scores()
+    subtract_points(student_name,student_points)
