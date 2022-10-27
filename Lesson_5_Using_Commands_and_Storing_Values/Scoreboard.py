@@ -40,11 +40,11 @@ def subtract_points(student, points):
 def display_scores():
     print(students_points_class2)
 
+
+display_scores()
 while True:
-    display_scores()
 
     student_name = input("Enter the good student's name: ")
     student_points = input("Enter the points earned: ")
     add_points(student_name, student_points)
-    # display_scores()
-    subtract_points(student_name,student_points)
+    display_scores()
